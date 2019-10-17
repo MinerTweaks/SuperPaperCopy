@@ -24,12 +24,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318818779464849871}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 318818780378759999}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &318818779464849868
 SpriteRenderer:
@@ -69,47 +69,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300056, guid: 97cd87791428a194399f26fa7b93ea20, type: 3}
+  m_Sprite: {fileID: -7282886668606283007, guid: 25fb1b5856a044a4db14927969e392b3,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &318818779620621770
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 318818779620621771}
-  m_Layer: 0
-  m_Name: targetDirection
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &318818779620621771
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 318818779620621770}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 318818780378759999}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &318818780378759936
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,7 +110,6 @@ Transform:
   m_LocalPosition: {x: 1.263, y: 1.563, z: -1.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 318818779620621771}
   - {fileID: 318818779464849869}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -157,14 +127,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 318818780378759937}
-  targetDirection: {fileID: 318818779620621771}
   sprRenderer: {fileID: 318818779464849868}
-  facingRightSprite: {fileID: 21300056, guid: 97cd87791428a194399f26fa7b93ea20, type: 3}
-  facingLeftSprite: {fileID: 21300060, guid: 97cd87791428a194399f26fa7b93ea20, type: 3}
+  facingRightSprite: {fileID: -7282886668606283007, guid: 25fb1b5856a044a4db14927969e392b3,
+    type: 3}
+  facingLeftSprite: {fileID: 4518187702968751635, guid: 25fb1b5856a044a4db14927969e392b3,
+    type: 3}
   gravity: 25
   speed: 2
   jumpForce: 8
-  rotateSpeed: 180
+  rotateSpeed: 120
   angle: 45
 --- !u!143 &318818780378759937
 CharacterController:
